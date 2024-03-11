@@ -1,0 +1,59 @@
+body{
+    /* background-image: url(../components/images\ \(1\).jpeg); */
+    /* background-image: 100% auto; */
+    /* background-size:cover ; */
+      background-color: rgb(170, 158, 143);
+} 
+body{
+    background:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(/Project/1.jpg);
+    /* background-color:rgb(60, 73, 87); */
+    background-size: cover;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table{
+    /* width:90em; */
+    margin:auto;
+    /* border-spacing: 10px; */
+    border-collapse: collapse;
+    color:whitesmoke;
+    box-shadow:5px 15px 5px rgba(0, 0, 0, 0.5);
+    /* background:linear-gradient(to top,rgba(255, 255, 255, 0.304)50%,rgba(255, 255, 255, 0.304)50%); */
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+}
+th{
+    text-transform: uppercase;
+    border-bottom:2px solid gray;
+    padding:10px;
+    /* background-image: url(../components/Gvt.jpg); */
+
+}
+td{
+    padding:5px;
+    border:1px solid black;
+}
+/* tr:nth-child(even){
+    background-color:rgb(183, 173, 160);
+    background:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(../components/1.jpg);
+}
+tr:nth-child(odd){
+    background-color:rgb(170, 158, 143);
+} */
+.one{
+    font-size: 25px;
+    color:#ff7200;
+    text-align:center;
+}
+.des{
+    width:300px;
+    height:150px;
+    text-align: inherit;
+}
+/* .kutta{
+    height:300px;
+    width:300px;
+    border:2px solid white;
+} */
+.link{
+    color:aliceblue;
+}

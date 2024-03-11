@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Project/business.css">
+    <title>Business</title>
+    <style>
+        
+        /* Apply basic styling to the entire page */
+        body {
+            /* background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(1.jpg); */
+            background-image:url("https://i.postimg.cc/YqFd6KWs/1.jpg");
+            background-size: cover;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        
+        /* Style the title */
+        h1 {
+            font-size: 30px;
+            text-align: center;
+            padding: 20px;
+            color: #ff7200;
+        }
+        h3 {
+            font-size: 20px;
+            /* text-align: center; */
+            padding: 20px;
+            color: #ff7200;
+        }
+        
+        /* Style the container for the table */
+        .kutta {
+            width: 85%;
+            /* max-width: 800px; */
+            margin: 0 auto;
+            /* background-color: rgba(0, 0, 0, 0.8); */
+            /* border: 2px solid white; */
+            border-radius: 10px;
+            padding: 20px;
+            /* overflow: auto; */
+            line-height: 2.0;
+        }
+        
+        /* Style the table headers */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: whitesmoke;
+            box-shadow: 5px 15px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Style table headers */
+        th {
+            text-transform: uppercase;
+            border-bottom: 2px solid gray;
+            padding: 10px;
+        }
+        
+        /* Style table cells */
+        td {
+            padding: 10px;
+            border: 1px solid white;
+        }
+        
+        /* Style table rows alternately */
+        tbody tr:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        tbody tr:nth-child(odd) {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        /* Style the "More info" links */
+        .table a {
+            color: aliceblue;
+            text-decoration: none;
+            transition: color 0.3s, background-color 0.3s;
+            padding: 5px 10px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        
+        /* Hover effect for the "More info" links */
+        .table a:hover {
+            color: #e25d00;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: #e25d00;
+            transform: scale(1.1);
+        }
+        
+        /* Add animation for anchor tags */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        /* Apply bounce animation to the links */
+        .table a:hover {
+            animation: bounce 0.5s;
+        }
+        /* Style the "More info" links */
+        .table a {
+            color: aliceblue;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            display: inline-block;
+            position: relative; /* Add relative positioning for animation */
+        }
+        
+        /* Professionally styled hover animation for the "More info" links */
+        .table a:hover {
+            color: #e25d00; /* Change text color on hover */
+            transition: color 0.3s;
+        }
+        
+        /* Add an underline that animates from left to right on hover */
+        .table a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #e25d00;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease-in-out;
+        }
+        
+        /* Expand the underline from left to right on hover */
+        .table a:hover::before {
+            width: 100%;
+        }
+        /* Style the "More info" links */
+        .table a {
+            color: aliceblue;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            display: inline-block;
+            position: relative;
+            transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Use a cubic-bezier easing for smooth animation */
+            overflow: hidden;
+        }
+        
+        /* Create a pseudo-element for the hover animation */
+        .table a::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 100%;
+            background-color: #e25d00;
+            top: 0;
+            left: 0;
+            transition: width 0.3s ease-in-out;
+            z-index: -1; /* Place the pseudo-element behind the link text */
+        }
+        
+        /* Animate the pseudo-element from left to right on hover */
+        .table a:hover::before {
+            width: 100%;
+            transform: translateX(-100%); /* Move the pseudo-element off-screen initially */
+        }
+        
+        
+        
+        
+            </style>
+</head>
+<body>
+    <div class="one">
+        <h1>BUSINESS AND ENTREPRENEURSHIP</h1>
+    </div>
+    <div class="kutta">
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Scheme Name</th>
+                        <th>Description</th>
+                        <th>Benefits</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>New Swarnima Scheme For Women</td>
+                        <td class="des">A term loan scheme by the Ministry of Social Justice and Empowerment for women entrepreneurs from backward classes to obtain a loan of up to ₹2,00,000/- @ 5% per annum, thereby providing them social & financial security. The scheme is introduced by National Backward Classes Finance and Development Corporation (NBCFDC) and implemented by State Channelising Agencies (SCAs) which act as the nodal agency.</td>
+                        <td>1)	A subsidy amount of ₹2,00,000/- @ 5% per annum, for self-employment. (The remaining amount has to be self-owned by the beneficiary.)
+                            2)	The beneficiary woman is not required to invest any amount of her own on the projects upto cost of Rs.2,00,000/-. 
+                            </td>
+                        <div class="link"><td><a href="http://127.0.0.1:5500/Project/business1.html" target="_blank">More info</a></td></div>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Credit Based Schemes For SC - Mahila Samriddhi Yojana</td>
+                        <td class="des">A Micro finance scheme by Ministry of Social justice and Empowerment for Women of Scheduled Caste Category with a rebate in interest.  </td>
+                        <td>Unit Cost:
+                            Upto Rs 1,40,000/- </br>
+                            
+                            Quantum of Assistance:
+                            up to Rs 90% of the Project Cost </br>
+                            
+                            Interest Rate per annum chargeable to
+                            1)	SCAs - 1 %
+                            2)	Beneficiaries - 4 % </br>
+                            
+                            Financial Assistance:
+                            Up to 90% of Project Cost of Rs. 1,40,000 for small income generating activities at  Interest rates  chargeable at  4% </br>
+                             
+                            Repayment Period:
+                            Within 3 and ½ years, in quarterly installments from date of each disbursement including the moratorium period </br>
+                            
+                            </td>
+                        <div class="link"><td><a href="http://127.0.0.1:5500/Project/business2.html " target="_blank">More info</a></td></div>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Unemployed Youth Employment Generation Programme</td>
+                        <td class="des">The Micro, Small and Medium Enterprises Department, Government of Tamil Nadu introduced the scheme "Unemployed Youth Employment Generation Programme (UYEGP)" which aims to mitigate the unemployment problems of socially and economically weaker sections of society, particularly among the educated and unemployed youth of the state. The youth of the state will become self-employed by setting up Manufacturing/ Service / Business enterprises by availing loans up to the maximum of ₹15 Lakhs, ₹5 Lakhs, and ₹5 Lakhs respectively with subsidy assistance from the State Government up to 25% of the project cost (Maximum to a limit of ₹2.50 Lakhs). The objective of the programme is to assist marginalized youths to become entrepreneurs. </td>
+                        <td>Under the scheme, subsidy assistance will be provided by the State Government up to 25% of the project cost (Maximum to a limit of ₹2.50 Lakhs) for setting up Manufacturing/ Service / Business enterprises. 
+                            </td>
+                        <div class="link"><td><a href="http://127.0.0.1:5500/Project/business3.html" target="_blank">More info</a></td></div>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Migrants Employment Generation Programme</td>
+                        <td class="des">The Government of Tamil Nadu launched the "Migrants Employment Generation Programme (MEGP)" to help Tamils who came back to Tamil Nadu because of COVID-19. This scheme is managed by the Commissionerate of Industries and Commerce and local offices called District Industries Centre (DICs). It aims to support skilled migrants who lost their jobs due to the pandemic and want to start small businesses. This will not only create jobs for them but also for others in the community. The government is working closely with the Micro, Small, and Medium Enterprises Department on this scheme. </td>
+                        <td>●	Under the scheme, the subsidy @ 25% of the project cost will be sanctioned to the beneficiaries subject to a maximum of ₹2.5 lakhs. 
+                            </td>
+                        <div class="link"><td><a href="http://127.0.0.1:5500/Project/business4.html" target="_blank">More info</a></td></div>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Annal Ambedkar Business Champions Scheme</td>
+                        <td class="des">The "Annal Ambedkar Business Champions Scheme (AABCS)" was introduced by the Tamil Nadu Government to boost economic opportunities for people from Scheduled Caste and Scheduled Tribe communities. These communities have historically had fewer opportunities for government support in starting their businesses. Under this scheme, eligible entrepreneurs can get a 35% subsidy for purchasing machinery and equipment. Additionally, they can benefit from a 6% interest subsidy on loans they take for these purchases. 
+                            </td>
+                        <td>1)	Under the scheme, the State Government will provide a 35% capital subsidy on the Eligible Project Cost, not exceeding ₹1.5 Crore.</br>
+                            2)	A 6% interest subvention will be given for loans sanctioned under this scheme.</br>
+                            Note 01: Interest subvention will be given to loans sanctioned by scheduled Commercial Banks, Co-Operatives Banks, Tamil Nadu Industrial Investment Corporation, and Non-Banking Financial Companies (NBFCs) during the tenure of the loan not exceeding 10 years.</br>
+                            Note 02: The capital subsidy sanctioned will be provided frontend to the extent necessary to constitute margin money requirement for credit linkage.</br>
+                            Note 03: The working capital sanctioned for the project shall be eligible for interest subvention for a period not exceeding 2 years. 
+                            
+                            </td>
+                        <div class="link"><td><a href="http://127.0.0.1:5500/Project/business5.html" target="_blank">More info</a></td></div>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>PM Vishwakarma</td>
+                        <td class="des">PM Vishwakarma is a Central Sector Scheme launched by Ministry of Micro, Small and Medium Enterprises to provide holistic and end-to-end support to artisans and craftspeople through access to collateral free credit, skill training, modern tools, incentive for digital transactions and market linkage support. The scheme will initially be implemented for five years up to 2027-28. </td>
+                        <td>1)	Recognition: Recognition as Vishwakarma through Certificate and ID Card</br>
+                            2)	Skilling:
+                            ●	Skill Verification followed by 5-7 days (40 hours) of Basic Training
+                            ●	Interested candidates can also enrol for 15 days (120 hours) of Advanced Training
+                            ●	Training Stipend: ₹ 500 per day</br>
+                            3)	Toolkit Incentive: ₹ 15,000 grant</br>
+                            4)	Credit Support:
+                            ●	Collateral-free Enterprise Development Loans: ₹ 1,00,000 (First Tranche for 18 months repayment) & ₹ 2,00,000 (Second Tranche for 30 months repayment)
+                            ●	Concessional Rate of Interest: 5% to be charged from the beneficiary with an Interest Subvention cap of 8% to be paid by MoMSME
+                            ●	Credit Guarantee fees to be borne by GoI</br>
+                            5)	Incentive for Digital Transaction: ₹ 1 per transaction for a maximum of up to 100 transactions (monthly)</br>
+                            6)	Marketing Support: The National Committee for Marketing (NCM) will provide services such as Quality Certification, Branding and Promotion, e-commerce Linkage, Trade Fair Advertising, Publicity and Other Marketing Activities. 
+                            
+                            </td>
+                        <div class="link"><td><a href="http://127.0.0.1:5500/Project/business6.html" target="_blank">More info</a></td></div>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Agri-Clinics And Agri-Business Centres Scheme</td>
+                        <td class="des">The Ministry of Agriculture and Farmers' Welfare launched a scheme called AC&ABC back in 2002. This scheme is all about helping farmers improve their farming practices. They do this by giving advice and services to farmers, and sometimes they charge a fee for it, but other times it's free. They also aim to create jobs for people who studied agriculture or related subjects and couldn't find work.</td>
+                        <td>Agri-Clinics are envisaged to provide expert advice and services to farmers on various aspects to enhance the productivity of crops/animals and increase the incomes of farmers. Agri-Clinics provide support in the following areas:
+                            Soil health
+                            Cropping practices
+                            Plant protection
+                            Crop insurance post-harvest technology clinical services for animals, feed and fodder management prices of various crops in the market, etc. 
+                             
+                            </td>
+                        <div class="link"><td><a href="http://127.0.0.1:5500/Project/business7.html" target="_blank">More info</a></td></div>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script>
+        function loadGoogleTranslate()
+        {
+            new google.translate.TranslateElement("google_element")
+        }
+    </script> -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,ta,te,ma,hi'}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

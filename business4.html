@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Project/second.css">
+    <title>Business</title>
+    <style>
+        /* Apply basic styling to the entire page */
+body {
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(1.jpg); */
+    background-image:url("https://i.postimg.cc/YqFd6KWs/1.jpg");
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Style the title */
+h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color: #ff7200;
+}
+h3 {
+    font-size: 20px;
+    /* text-align: center; */
+    padding: 20px;
+    color: #ff7200;
+}
+
+/* Style the container for the table */
+.kutta {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: auto;
+    line-height: 2.0;
+}
+
+/* Style the table headers */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: whitesmoke;
+    box-shadow: 5px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Style table headers */
+th {
+    text-transform: uppercase;
+    border-bottom: 2px solid gray;
+    padding: 10px;
+}
+
+/* Style table cells */
+td {
+    padding: 10px;
+    border: 1px solid white;
+}
+
+/* Style table rows alternately */
+tbody tr:nth-child(even) {
+    background-color: rgba(47, 46, 46, 0.8);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(47, 46, 46, 0.8);
+}
+
+/* Style the "More info" links */
+.table a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Hover effect for the "More info" links */
+.table a:hover {
+    color: #e25d00;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #e25d00;
+    transform: scale(1.1);
+}
+
+/* Add animation for anchor tags */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Apply bounce animation to the links */
+.table a:hover {
+    animation: bounce 0.5s;
+}
+/* Style the "More info" links */
+.table a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative; /* Add relative positioning for animation */
+}
+
+/* Professionally styled hover animation for the "More info" links */
+.table a:hover {
+    color: #e25d00; /* Change text color on hover */
+    transition: color 0.3s;
+}
+
+/* Add an underline that animates from left to right on hover */
+.table a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #e25d00;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Expand the underline from left to right on hover */
+.table a:hover::before {
+    width: 100%;
+}
+/* Style the "More info" links */
+.table a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Use a cubic-bezier easing for smooth animation */
+    overflow: hidden;
+}
+
+/* Create a pseudo-element for the hover animation */
+.table a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: #e25d00;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+    z-index: -1; /* Place the pseudo-element behind the link text */
+}
+
+/* Animate the pseudo-element from left to right on hover */
+.table a:hover::before {
+    width: 100%;
+    transform: translateX(-100%); /* Move the pseudo-element off-screen initially */
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="one">
+        <h1>BUSINESS AND ENTREPRENEURSHIP</h1>
+    </div>
+    <div class="kutta">
+        <div class="table">           
+            <h3>Eligibility</h3>
+            <p> 1)	The applicant should have returned to Tamil Nadu on & after 01-01-2020 due to the Covid-19 outbreak.</br>
+                2)	The age of the applicant should be between 18 to 45 years in general and for special categories (Women/Minorities/ BC/MBC/SC/ST/Ex-servicemen/Transgender/Differently abled), the age relaxation is up to 55 years.</br>
+                3)	The applicant should possess a minimum educational qualification of 8th standard pass.</br>
+                4)	The family income of the applicant should be below ₹5.00 lakh.</br>
+                5)	The maximum project costs for Manufacturing / Trading / Service projects should be ₹15.00 lakh / ₹5.00 lakh / ₹5.00 lakh respectively.</br>
+                6)	The applicant’s/promoter’s contribution should be 10% of the project cost for the General category and 5% for the Special Category.     
+            </p>
+            <h3>Application Process</h3>
+            <p>Step 01: The applicant willing to avail loan under the MEGP scheme should fill up the online application through the <a href="https://msmeonline.tn.gov.in/megp/megp_desc.php">Official Website</a> of the Micro, Small and Medium Enterprises Department, Government of Tamil Nadu. </br>
+                Step 02: On the home page, click on “Apply Online” and then “New Application”. </br>
+                Step 03: Click on ‘Register’ and fill in the details like Name, Date of Birth, Email ID, Aadhaar Number & Mobile Number.</br>
+                Step 04: After successful registration, click on ‘login’ and fill in all the mandatory details.</br>
+                Step 05: Upload all the necessary documents and submit the application form. 
+                
+                Post-Application Processes: </br>
+                
+                Step 01: The applications received by District Industries Centres will be scrutinized and shall be placed before the Task Force Committee at least once a month. </br>
+                Step 02: The Selection will be based on the experience, qualification, skill, viability of the project, marketability, etc.</br>
+                Step 03: The bank branches shall call for personal interviews with the applications to provide subsequent provisional sanctions by them. The provisional sanctions Shall be intimated to the. District Industries Centres concerned.</br>
+                Step 04: The District Industries Centres shall arrange for compulsory Entrepreneur Development Program training for a period of two days by the Entrepreneur Development Institute and on completion, Entrepreneur Development Institute will issue certificates.</br>
+                Step 05: After successful completion of Entrepreneur Development Program training, the beneficiary will deposit the Promoter's Contribution with the bank. Thereafter, the bank will disburse the 1st installment of the finance to the beneficiary on the production of the training completion certificates.</br>
+                Step 06: The respective disbursement advice should be forwarded to District Industries Centres along with the subsidy claims.</br>
+                Step 07: The Tamil Nadu Government subsidy amount will be drawn by the Commissioner of Rehabilitation and Welfare of Non-Resident Tamils and disbursed to the Industries Commissioner and Director of Industries and Commerce, where it will be transferred through Direct Benefit Transfer (D.B.T.) Mode with the lead district Bank and they will act as District Level Nodal Bank. Interest accrual, if any, shall be adjusted against the sanction of the contingency fund.</br>
+                Step 08: On receipt of the Subsidy claim raised by the financing branch duly countersigned by General Manager, District Industries Centre, District Nodal Bank will release the subsidy to financing bank branches.</br>
+                Step 09: The subsidy will be deposited in a Term Deposit Receipt (TDR) for 3 years at the financing bank branch level in the name of the beneficiary. No interest will be paid on the Term Deposit Receipt and no interest will be charged on a loan amount equal to the amount of the Term Deposit Receipt.</br>
+                Step 10: The subsidy will be credited to the borrower's loan account after 3 years from the date of first disbursement to the borrower by the bank. In case the bank's advance goes bad before the-three years period, due to reasons, beyond the -control of the beneficiary, the subsidy will be adjusted by the Bank to liquidate the loan liability of the borrower either in part or full. </br>
+                Step 11: The total subsidy amount shall be obtained through Government sanction in the formal Government Order by the Commissionerate of Rehabilitation and Welfare of Non-Resident Tamils with relevance to their targets to be allotted by the office of Industries Commissioner and Director of Industries Commerce during the beginning of the Financial Year. </br>   
+            </p>
+            <h3>Documents Required</h3>
+            <p> 1.Identity proof i.e. copy of Election ID Card/ Aadhaar card</br>
+                2.Copy of PAN Card</br>
+                3.Passport size photo</br>
+                4.Proof of Educational Qualification </br>
+                5.Proof of age</br>
+                6.Caste/Community Certificate</br>
+                7.Residence proof</br>
+                8.Valid certificate for the proof of Ex-Serviceman /Differently abled /Transgender</br>
+                9.Bank account details        
+            </p>
+            <h3>Source and Reference</h3>
+            <a href="https://msmeonline.tn.gov.in/megp/megp_desc.php"> Scheme Guide Lines </a>
+            <h3>Procedure for Online Filling of Application</h3>
+             <a href="https://msmeonline.tn.gov.in/megp/pdf/guideline_tofill_application.pdf">Online Form</a>
+        </div>
+    </div>
+    <!-- <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script>
+        function loadGoogleTranslate()
+        {
+            new google.translate.TranslateElement("google_element")
+        }
+    </script> -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,ta,te,ma,hi'}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

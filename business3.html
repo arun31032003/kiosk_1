@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Project/second.css">
+    <title>Business</title>
+    <style>
+        /* Apply basic styling to the entire page */
+body {
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(1.jpg); */
+    background-image:url("https://i.postimg.cc/YqFd6KWs/1.jpg");
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Style the title */
+h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color: #ff7200;
+}
+h3 {
+    font-size: 20px;
+    /* text-align: center; */
+    padding: 20px;
+    color: #ff7200;
+}
+
+/* Style the container for the table */
+.kutta {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: auto;
+    line-height: 2.0;
+}
+
+/* Style the table headers */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: whitesmoke;
+    box-shadow: 5px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Style table headers */
+th {
+    text-transform: uppercase;
+    border-bottom: 2px solid gray;
+    padding: 10px;
+}
+
+/* Style table cells */
+td {
+    padding: 10px;
+    border: 1px solid white;
+}
+
+/* Style table rows alternately */
+tbody tr:nth-child(even) {
+    background-color: rgba(47, 46, 46, 0.8);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(47, 46, 46, 0.8);
+}
+
+/* Style the "More info" links */
+.table a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Hover effect for the "More info" links */
+.table a:hover {
+    color: #e25d00;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #e25d00;
+    transform: scale(1.1);
+}
+
+/* Add animation for anchor tags */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Apply bounce animation to the links */
+.table a:hover {
+    animation: bounce 0.5s;
+}
+/* Style the "More info" links */
+.table a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative; /* Add relative positioning for animation */
+}
+
+/* Professionally styled hover animation for the "More info" links */
+.table a:hover {
+    color: #e25d00; /* Change text color on hover */
+    transition: color 0.3s;
+}
+
+/* Add an underline that animates from left to right on hover */
+.table a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #e25d00;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Expand the underline from left to right on hover */
+.table a:hover::before {
+    width: 100%;
+}
+/* Style the "More info" links */
+.table a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Use a cubic-bezier easing for smooth animation */
+    overflow: hidden;
+}
+
+/* Create a pseudo-element for the hover animation */
+.table a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: #e25d00;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+    z-index: -1; /* Place the pseudo-element behind the link text */
+}
+
+/* Animate the pseudo-element from left to right on hover */
+.table a:hover::before {
+    width: 100%;
+    transform: translateX(-100%); /* Move the pseudo-element off-screen initially */
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="one">
+        <h1>BUSINESS AND ENTREPRENEURSHIP</h1>
+    </div>
+    <div class="kutta">
+        <div class="table">           
+            <h3>Eligibility</h3>
+            <p>1)	The applicant should be a permanent resident of Tamil Nadu.</br>
+                2)	The applicant should be a minimum of 18 years of age; and</br>
+                ●	 for the General category: maximum of 35 years of age.</br>
+                ●	 for Special category (SC/ ST/MBC/ BC/ Minorities/ Ex-Servicemen/ Differently abled/ Transgender): maximum of 45 years of age.</br>
+                3)	The applicant should have passed the 8th standard.</br>
+                4)	The family income of the applicant should not exceed ₹5 lakhs per annum.</br>
+                5)	The applicant's contribution should be 10% of the project cost for the General category; or 5% for the Special category.</br>
+                6)	Entrepreneurship Development Programme (EDP) training is mandatory.</br>
+                7)	Project cost should not be more than ₹15 lakhs for manufacturing, and ₹5 lakhs for Trading / Service projects.         
+            </p>
+            <h3>Application Process</h3>
+            <p>Online: </br>
+
+                Step 01: The applicant willing to avail loan under the UYEGP scheme should fill up the online application through the Official Website of the Micro, Small and Medium Enterprises Department, Government of Tamil Nadu. </br>
+                Step 02: On the home page, click on “Apply Online” and then “New Application”. </br>
+                Step 03: Click on ‘Register’ and fill in the details like Name, Date of Birth, Email ID, Aadhaar Number & Mobile Number.</br>
+                Step 04: After successful registration, click on ‘login’ and fill in all the mandatory details.</br>
+                Step 05: Upload all the necessary documents and submit the application form.</br>
+                
+                Post-Application Process:</br>
+                
+                Step 01: Verification of eligibility of online submitted application by District Industries Centre (DIC).</br>
+                Step 02: The applicant will receive a call letter for attending the interview and participating in the interview.</br>
+                Step 03: Recommendation of loan application to bank and sanctions of loan to be accorded by the bank.</br>
+                Step 04: Receiving the call letter for attending Entrepreneurship Development Programme (EDP) training and attending EDP training.</br>
+                Step 05: After receiving the EDP completion certificate and the applicant needs to submit it with other documents as required by the bank to the bank.</br>
+                Step 06: Loan disbursement by banks and filing of subsidy claim by the bank with DIC.</br>
+                Step 07: The subsidy amount will be disbursed by DIC and deposit subsidy amount under TDR for 3 years. After the completion of 3 years, the subsidy will be adjusted in the loan amount.
+            </p>
+            <h3>Documents Required</h3>
+            <p> 1)	Identity proof i.e. copy of Election ID Card/ Aadhaar card etc.</br>
+                2)	Copy of PAN Card</br>
+                3)	Passport size photo</br>
+                4)	Income Certificate</br>
+                5)	Educational Qualification proof- Transfer certificate/ Record Sheet issued by School/College.(Two Copies)</br>
+                6)	Proof of age</br>
+                7)	Caste/Community Certificate</br>
+                8)	Ration Card (In case of applicants who don't possess a valid Ration Card, a Nativity certificate from the Thasildhar/ Aadhar card xerox / Election voters identity card Xerox)</br>
+                9)	Project Report</br>
+                10)	Valid Quotations with GST number</br>
+                11)	Valid certificate for Ex-Serviceman /Differently abled /Transgender</br>
+                12)	Bank account details</br>
+                13)	Affidavit - For reference to the candidate which should be typed in a ₹20/- Non-Judicial Stamp Paper duly Certified and Signed by the Notary Public and then submitted along with a copy of the Rental/Lease Agreement to the bank while sanctioning the loan.
+            </p>
+            <h3>Source and Reference</h3>
+            <a href="https://msmeonline.tn.gov.in/uyegp/uyegp_desc.php "> Scheme Guide Lines </a>
+            <h3>Procedure for Online Filling of Application</h3>
+             <a href="https://msmeonline.tn.gov.in/uyegp/pdf/guideline_tofill_application.pdf">Online Form</a>
+        </div>
+    </div>
+    <!-- <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script>
+        function loadGoogleTranslate()
+        {
+            new google.translate.TranslateElement("google_element")
+        }
+    </script> -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,ta,te,ma,hi'}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

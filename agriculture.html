@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Project/agriculture.css">
+    <title>Agriculture</title>
+    <style>
+        /* Apply basic styling to the entire page */
+body {
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(1.jpg); */
+    background-image:url("https://i.postimg.cc/YqFd6KWs/1.jpg");
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Style the title */
+h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color: #ff7200;
+}
+h3 {
+    font-size: 20px;
+    /* text-align: center; */
+    padding: 20px;
+    color: #ff7200;
+}
+
+/* Style the container for the table */
+.kutta {
+    width: 85%;
+    /* max-width: 800px; */
+    margin: 0 auto;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    /* border: 2px solid white; */
+    border-radius: 10px;
+    padding: 20px;
+    /* overflow: auto; */
+    line-height: 2.0;
+}
+
+/* Style the table headers */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: whitesmoke;
+    box-shadow: 5px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Style table headers */
+th {
+    text-transform: uppercase;
+    border-bottom: 2px solid gray;
+    padding: 10px;
+}
+
+/* Style table cells */
+td {
+    padding: 10px;
+    border: 1px solid white;
+}
+
+/* Style table rows alternately */
+tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Style the "More info" links */
+.table a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Hover effect for the "More info" links */
+.table a:hover {
+    color: #e25d00;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #e25d00;
+    transform: scale(1.1);
+}
+
+/* Add animation for anchor tags */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Apply bounce animation to the links */
+.table a:hover {
+    animation: bounce 0.5s;
+}
+/* Style the "More info" links */
+.table a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative; /* Add relative positioning for animation */
+}
+
+/* Professionally styled hover animation for the "More info" links */
+.table a:hover {
+    color: #e25d00; /* Change text color on hover */
+    transition: color 0.3s;
+}
+
+/* Add an underline that animates from left to right on hover */
+.table a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #e25d00;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Expand the underline from left to right on hover */
+.table a:hover::before {
+    width: 100%;
+}
+/* Style the "More info" links */
+.table a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Use a cubic-bezier easing for smooth animation */
+    overflow: hidden;
+}
+
+/* Create a pseudo-element for the hover animation */
+.table a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: #e25d00;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+    z-index: -1; /* Place the pseudo-element behind the link text */
+}
+
+/* Animate the pseudo-element from left to right on hover */
+.table a:hover::before {
+    width: 100%;
+    transform: translateX(-100%); /* Move the pseudo-element off-screen initially */
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="one">
+        <h1>AGRICULTURE RURAL AND ENVIRONMENT</h1>
+    </div>
+    <div class="kutta">
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Scheme Name</th>
+                        <th>Description</th>
+                        <th>Benefits</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Deen Dayal Upadhyay Grameen Kaushalaya Yojane</td>
+                        <td class="des">Deen Dayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY), the skill training and placement program of the Ministry of Rural Development (MoRD), occupies a unique position amongst other skill training programs, due to its focus on the rural poor youth and its emphasis on sustainable employment through the prominence
+                            and incentives are given to post-placement tracking, retention, and career progression.
+                            </td>
+                        <td>●	Skilling and placement under DDU-GKY involve eight distinct steps:</br> 
+                            ●	Awareness building within the community on the opportunities.</br>
+                            ●	Identifying rural youth who are poor.</br>
+                            ●	Mobilizing rural youth who are interested.</br>
+                            ●	Counseling of youth and parents.</br>
+                            ●	Selection based on aptitude.</br>
+                            ●	Imparting knowledge, industry-linked skills, and attitudes that enhance employability.</br>
+                            ●	Providing jobs that can be verified through methods that can stand up to independent scrutiny, and which pay above minimum wages.</br>
+                            ●	Supporting the person so employed for sustainability after placement.</br>
+                        </td>
+                            <!-- <td><iframe src="c:\Users\USER\Downloads\Agriculture.pdf">Download</iframe> -->
+                        <div class="link"><td><a href="http://127.0.0.1:5500/Project/agriculture1.html" target="_blank">More info</a></td></div>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Pradhan Mantri Kisan Samman Nidhi</td>
+                        <td class="des">The scheme aims to supplement the financial needs of all landholding farmers’ families in procuring various inputs to ensure proper crop health and appropriate yields, commensurate with the anticipated farm income as well as for domestic needs. Under the Scheme an amount of Rs.6000/- per year is released by the Central Government online directly into the bank accounts of the eligible farmers under Direct Benefit Transfer mode, subject to certain exclusions.</td>
+                        <td>Financial benefit of Rs. 6000 per annum per family payable in three equal installments of Rs 2000 each, every four months.</td>
+                        <div class="link"><td><a href="http://127.0.0.1:5500/Project/agriculture2.html" target="_blank">More info</a></td></div>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>National Scheme Of Welfare Of Fishermen</td>
+                        <td class="des">The National Scheme of Welfare of Fishermen is a centrally sponsored scheme that provides financial assistance to fishermen. They can use these for constructing houses and community halls for both recreation and work purposes. Further, through the amount availed under this scheme, fishermen can install tube wells.</td>
+                        <td>Financial benefit of Rs. 6000 per annum per family payable in three equal installments of Rs 2000 each, every four months.</td>
+                        <div class="link"><td><a href="http://127.0.0.1:5500/Project/agriculture3.html" target="_blank">More info</a></td></div>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script>
+        function loadGoogleTranslate()
+        {
+            new google.translate.TranslateElement("google_element")
+        }
+    </script> -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,ta,te,ma,hi'}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

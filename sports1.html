@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Project/second.css">
+    <title>Sports and Culture</title>
+    <style>
+        /* Apply basic styling to the entire page */
+body {
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(1.jpg); */
+    background-image:url("https://i.postimg.cc/YqFd6KWs/1.jpg");
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Style the title */
+h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color: #ff7200;
+}
+h3 {
+    font-size: 20px;
+    /* text-align: center; */
+    padding: 20px;
+    color: #ff7200;
+}
+
+/* Style the container for the table */
+.kutta {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: auto;
+    line-height: 2.0;
+}
+
+/* Style the table headers */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: whitesmoke;
+    box-shadow: 5px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Style table headers */
+th {
+    text-transform: uppercase;
+    border-bottom: 2px solid gray;
+    padding: 10px;
+}
+
+/* Style table cells */
+td {
+    padding: 10px;
+    border: 1px solid white;
+}
+
+/* Style table rows alternately */
+tbody tr:nth-child(even) {
+    background-color: rgba(47, 46, 46, 0.8);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(47, 46, 46, 0.8);
+}
+
+/* Style the "More info" links */
+.table a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Hover effect for the "More info" links */
+.table a:hover {
+    color: #e25d00;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #e25d00;
+    transform: scale(1.1);
+}
+
+/* Add animation for anchor tags */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Apply bounce animation to the links */
+.table a:hover {
+    animation: bounce 0.5s;
+}
+/* Style the "More info" links */
+.table a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative; /* Add relative positioning for animation */
+}
+
+/* Professionally styled hover animation for the "More info" links */
+.table a:hover {
+    color: #e25d00; /* Change text color on hover */
+    transition: color 0.3s;
+}
+
+/* Add an underline that animates from left to right on hover */
+.table a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #e25d00;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Expand the underline from left to right on hover */
+.table a:hover::before {
+    width: 100%;
+}
+/* Style the "More info" links */
+.table a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Use a cubic-bezier easing for smooth animation */
+    overflow: hidden;
+}
+
+/* Create a pseudo-element for the hover animation */
+.table a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: #e25d00;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+    z-index: -1; /* Place the pseudo-element behind the link text */
+}
+
+/* Animate the pseudo-element from left to right on hover */
+.table a:hover::before {
+    width: 100%;
+    transform: translateX(-100%); /* Move the pseudo-element off-screen initially */
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- <img src="1.jpg" alt="hello"> -->
+    <div class="one">
+        <h1>SPORTS AND CULTURE</h1>
+    </div>
+    <div class="kutta">
+        <div class="table">
+            <h3>Eligibility</h3>
+            <p> 1)	Candidates should be Indian Nationals.</br>
+                2)	Candidates should have adequate general education to pursue their training effectively.</br>
+                3)	Candidates must give evidence of their desire to make the pursuit of their training effectively.</br>
+                4)	As the scholarships are meant for advanced training and not for beginners, candidates must have already acquired a degree of proficiency in the chosen field.</br>
+                5)	The candidate should have undergone a minimum of 5 years of training with their Guru/Institutes. The Certificate duly signed by the present Guru / Institute and former Guru/ Institute (if any) should be submitted along with the application.</br>
+                6)	Candidates should have adequate knowledge of the connected arts/ disciplines.</br>
+                7)	The candidate's age should not be less than 18 years and not more than 25 years as of 1st April of the year in which the application is being made. Age relaxation is not permissible. 
+                
+            </p>
+            <h3>Application Process</h3>
+            <p> Step 01: An advertisement inviting applications will be issued by the Centre for Cultural Resources and Training (CCRT), New Delhi.</br>
+                Step 02: Applicants are required to submit online applications on the CSMS <a href="http://csms.nic.in/">Portal</a> which is made available on the website of the Ministry of Culturehttps://indiaculture.gov.in/  & CCRThttps://ccrtindia.gov.in/ </br>
+                Step 03: The applicant needs to visit the official website and click on “MOC Schemes Application”.</br>
+                Step 04: Click on Registration and fill up the registration form.</br>
+                Step 05: Get Username and Password for Login</br>
+                Step 06: Go to the current scheme status and click on the appropriate scheme.</br>
+                Step 07: Fill up the form and submit it.</br>
+                Post-Application Process:</br>
+                Step 01: The shortlisted applicants after the process of scrutiny which is done through the software made available by NIC on the CSMS portal, are called for an Interview/Test before the Expert Committee constituted by the Ministry of Culture.</br>
+                Step 02: Candidates will be required to appear for an interview/ performance before the expert Committee. The date, time, and venue of the interview/performance will be intimated to the candidates through e-mail given by the candidates in their online application. The selection will be made purely on merit.</br>
+                Step 03: The list of recommended candidates is sent to the Ministry of Culture for approval and after approval, the selected candidates are informed about the selection by sending an Award letter by post as well as by email, and the list of selected candidates is also uploaded on CCRT’s website and Ministry of Culture respectively.</br>
+                Note 01: Any change in the address may be given to the Ministry in writing. While doing so subject/field of training, File No. (if any) should invariably be given.</br>
+                Note 02: Separate online applications should be submitted for each field if the candidate wants to apply for more than one field. 
+                
+            </p>
+            <h3>Documents Required</h3>
+            <p> 1)	Identity Proof</br>
+                2)	One self-attested copy of Education Qualifications (Degrees, Diplomas, etc.), experiences, etc.</br>
+                3)	One self-attested copy of the Matriculation or equivalent certificate or other admissible evidence of age.</br>
+                4)	One Passport size recent photograph.</br>
+                5)	Bank account details</br>
+                6)	Caste certificate (If applicable)</br>
+                7)	Residence proof (If applicable)</br>
+                8)	In the case of candidates applying for scholarships in the field of Painting, Sculpture, and Applied Arts, they are required to come with self-attested copies of photographs of the Original works. The minimum qualification for Visual Arts is BFA or equivalent.</br>
+                9)	As the scholarships are awarded for advanced training, the candidates should have undergone a minimum of 5 years of training with their Gurus/Institutes. The certificates to this effect duly signed by the present Guru/ Institute and former Guru/ Institute (if any) should be submitted along with the application. 
+                  
+            </p>
+            <h3>Source and Reference</h3>
+            <a href="https://ccrtindia.gov.in/activities/scholarship-schemes/#sya "> Scheme Guide Lines </a>
+        </div>
+    </div>
+    <!-- <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script>
+        function loadGoogleTranslate()
+        {
+            new google.translate.TranslateElement("google_element")
+        }
+    </script> -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,ta,te,ma,hi'}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

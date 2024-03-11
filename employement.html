@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Project/agriculture.css">
+    <title>Skills and Employement</title>
+    <style>
+        /* Apply basic styling to the entire page */
+body {
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(1.jpg); */
+    background-image:url("https://i.postimg.cc/YqFd6KWs/1.jpg");
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Style the title */
+h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color: #ff7200;
+}
+h3 {
+    font-size: 20px;
+    /* text-align: center; */
+    padding: 20px;
+    color: #ff7200;
+}
+
+/* Style the container for the table */
+.kutta {
+    width: 85%;
+    /* max-width: 800px; */
+    margin: 0 auto;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    /* border: 2px solid white; */
+    border-radius: 10px;
+    padding: 20px;
+    /* overflow: auto; */
+    line-height: 2.0;
+}
+
+/* Style the table headers */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: whitesmoke;
+    box-shadow: 5px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Style table headers */
+th {
+    text-transform: uppercase;
+    border-bottom: 2px solid gray;
+    padding: 10px;
+}
+
+/* Style table cells */
+td {
+    padding: 10px;
+    border: 1px solid white;
+}
+
+/* Style table rows alternately */
+tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Style the "More info" links */
+.table a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Hover effect for the "More info" links */
+.table a:hover {
+    color: #e25d00;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #e25d00;
+    transform: scale(1.1);
+}
+
+/* Add animation for anchor tags */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Apply bounce animation to the links */
+.table a:hover {
+    animation: bounce 0.5s;
+}
+/* Style the "More info" links */
+.table a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative; /* Add relative positioning for animation */
+}
+
+/* Professionally styled hover animation for the "More info" links */
+.table a:hover {
+    color: #e25d00; /* Change text color on hover */
+    transition: color 0.3s;
+}
+
+/* Add an underline that animates from left to right on hover */
+.table a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #e25d00;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Expand the underline from left to right on hover */
+.table a:hover::before {
+    width: 100%;
+}
+/* Style the "More info" links */
+.table a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Use a cubic-bezier easing for smooth animation */
+    overflow: hidden;
+}
+
+/* Create a pseudo-element for the hover animation */
+.table a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: #e25d00;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+    z-index: -1; /* Place the pseudo-element behind the link text */
+}
+
+/* Animate the pseudo-element from left to right on hover */
+.table a:hover::before {
+    width: 100%;
+    transform: translateX(-100%); /* Move the pseudo-element off-screen initially */
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="one">
+        <h1>SKILLS AND EMPLOYEMENT</h1>
+    </div>
+    <div class="kutta">
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Scheme Name</th>
+                        <th>Description</th>
+                        <th>Benefits</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>Unemployment Assistance Scheme - Tamil Nadu</td>
+                    <td class="des">The Unemployment Assistance was launched with a view to help the youth who have registered with the District Employment and Career Guidance Centre and waiting in the live register for five years or more to secure an employment.
+                        Unemployment Assistance is also provided to Differently-Abled job seekers. The criteria with regard to the Differently-Abled person to get this assistance is that they should have been on the live register for one year. However, there is no restriction on parental income and age. 
+                        </td>
+                    <td>General Candidate:	</br>
+                        SSLC/10th Failed (Secondary School Leaving Certificate).	Rs. 200/- </br>
+                        SSLC/10th Passed (Secondary School Leaving Certificate).	Rs. 300/-. </br>
+                        HSC /12th(Higher Secondary Certificate).Rs. 400/- </br>
+                        Graduation	Rs. 600/- </br>
+                        Differently Abled Candidates:</br>
+                        Illiterate to SSLC/10th (Secondary School Leaving Certificate).	Rs. 600/-  </br>
+                        HSC/12th (Higher Secondary certificate).Rs. 750/- </br>
+                        Graduation	Rs. 1,000/- 
+                        </td>
+                    <div class="link"><td><a href="http://127.0.0.1:5500/Project/employement1.html" target="_blank">More info</a></td></div>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Msme Skill Training And Employment Scheme</td>
+                    <td class="des">The scheme “MSME Skill Training and Employment Scheme” was launched by the Department of Micro, Small and Medium Enterprises, Government of Tamil Nadu during the years 2021-22. The scheme is implemented by the Commissionerate of Industries and Commerce at the State level, the Regional Joint Director of Industries and Commerce for Chennai district, and General Managers of the District Industries Centre for other districts in Tamil Nadu.</td>
+                    <td>1)	Under the scheme, the subsidy will be provided to the MSMEs for training; subject to a maximum of ₹2000/- per month per candidate for a maximum of 6 months.</br>
+                        2)	Certificates will be provided by the National Skill Development Corporation (NSDC), after the assessment of acquired skills by the trained candidates 
+                        
+                        </td>
+                    <div class="link"><td><a href="http://127.0.0.1:5500/Project/employement2.html" target="_blank">More info</a></td></div>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script>
+        function loadGoogleTranslate()
+        {
+            new google.translate.TranslateElement("google_element")
+        }
+    </script> -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,ta,te,ma,hi'}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

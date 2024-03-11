@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Project/business.css">
+    <title>Sports and Culture</title>
+    <style>
+        
+        /* Apply basic styling to the entire page */
+        body {
+            /* background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(1.jpg); */
+            background-image:url("https://i.postimg.cc/YqFd6KWs/1.jpg");
+            background-size: cover;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        
+        /* Style the title */
+        h1 {
+            font-size: 30px;
+            text-align: center;
+            padding: 20px;
+            color: #ff7200;
+        }
+        h3 {
+            font-size: 20px;
+            /* text-align: center; */
+            padding: 20px;
+            color: #ff7200;
+        }
+        
+        /* Style the container for the table */
+        .kutta {
+            width: 85%;
+            /* max-width: 800px; */
+            margin: 0 auto;
+            /* background-color: rgba(0, 0, 0, 0.8); */
+            /* border: 2px solid white; */
+            border-radius: 10px;
+            padding: 20px;
+            /* overflow: auto; */
+            line-height: 2.0;
+        }
+        
+        /* Style the table headers */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: whitesmoke;
+            box-shadow: 5px 15px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Style table headers */
+        th {
+            text-transform: uppercase;
+            border-bottom: 2px solid gray;
+            padding: 10px;
+        }
+        
+        /* Style table cells */
+        td {
+            padding: 10px;
+            border: 1px solid white;
+        }
+        
+        /* Style table rows alternately */
+        tbody tr:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        tbody tr:nth-child(odd) {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        /* Style the "More info" links */
+        .table a {
+            color: aliceblue;
+            text-decoration: none;
+            transition: color 0.3s, background-color 0.3s;
+            padding: 5px 10px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        
+        /* Hover effect for the "More info" links */
+        .table a:hover {
+            color: #e25d00;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: #e25d00;
+            transform: scale(1.1);
+        }
+        
+        /* Add animation for anchor tags */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        /* Apply bounce animation to the links */
+        .table a:hover {
+            animation: bounce 0.5s;
+        }
+        /* Style the "More info" links */
+        .table a {
+            color: aliceblue;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            display: inline-block;
+            position: relative; /* Add relative positioning for animation */
+        }
+        
+        /* Professionally styled hover animation for the "More info" links */
+        .table a:hover {
+            color: #e25d00; /* Change text color on hover */
+            transition: color 0.3s;
+        }
+        
+        /* Add an underline that animates from left to right on hover */
+        .table a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #e25d00;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease-in-out;
+        }
+        
+        /* Expand the underline from left to right on hover */
+        .table a:hover::before {
+            width: 100%;
+        }
+        /* Style the "More info" links */
+        .table a {
+            color: aliceblue;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            display: inline-block;
+            position: relative;
+            transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Use a cubic-bezier easing for smooth animation */
+            overflow: hidden;
+        }
+        
+        /* Create a pseudo-element for the hover animation */
+        .table a::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 100%;
+            background-color: #e25d00;
+            top: 0;
+            left: 0;
+            transition: width 0.3s ease-in-out;
+            z-index: -1; /* Place the pseudo-element behind the link text */
+        }
+        
+        /* Animate the pseudo-element from left to right on hover */
+        .table a:hover::before {
+            width: 100%;
+            transform: translateX(-100%); /* Move the pseudo-element off-screen initially */
+        }
+        
+        
+        
+        
+            </style>
+</head>
+<body>
+    <!-- <img src="1.jpg" alt="hello"> -->
+    <div class="one">
+        <h1>SPORTS AND CULTURE</h1>
+    </div>
+    <div class="kutta">
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Scheme Name</th>
+                        <th>Description</th>
+                        <th>Benefits</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>Award Of Scholarships To Young Artists In Different Cultural Fields</td>
+                    <td class="des">The scheme “Award of Scholarships to Young Artists in Different Cultural Fields” was launched by the Ministry of Culture, Government of India. This scheme seeks to give assistance to young artists of outstanding promise for advanced training within India in the field of Indian Classical Music, Indian Classical Dance, Theatre, Mime, Visual art, Folk, Traditional and Indigenous Arts, and Light Classical Music.</td>
+                    <td>1)	Under the scheme, total number of scholarships is 400.</br>
+                        2)	Each scholar will be paid ₹5000/- per month for a period of two years to cover his/ her living expenses on travel, books, art material, or other equipment and tuition or training charges, if any.</br>
+                        3)	The scholarships are provided in the field of Indian Classical Music, Classical Dances, Light Classical Music, Theatre, Visual Arts, and Folk/ Traditional and Indigenous Arts.
+                        </td>
+                    <div class="link"><td><a href="http://127.0.0.1:5500/Project/sports1.html" target="_blank">More info</a></td></div>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pandit Deendayal Upadhyay National Welfare Fund For Sportspersons</td>
+                    <td class="des">A welfare scheme by MYAS providing suitable assistance to the meritorious and outstanding sportspersons of yesteryear who had brought glory to the country in international field who are now living in indigent circumstances. The scheme promotes the welfare of the sportspersons generally in order to alleviate distress among them and their dependents. The scheme can be administered for active sportspersons individually or collectively as a group.</td>
+                    <td>This program provides financial assistance to athletes and sports-related individuals in need:</br>
+
+                        1. Assistance to Sportspersons in Need:
+                           - Lump-sum financial aid of up to Rs. 5 lakh for sportspersons facing financial difficulties.
+                           - Monthly pension of Rs. 5000 for retired meritorious sportspersons facing financial hardship.</br>
+                        
+                        2. Assistance for Sports Injuries:
+                           - Lump-sum financial assistance of up to Rs. 10 lakh for injuries sustained during sports training or competitions.</br>
+                        
+                        3. Support for Families of Deceased Outstanding Sportspersons:
+                           - Lump-sum financial aid of up to Rs. 5 lakh for families of deceased exceptional sportspersons facing financial hardship.</br>
+                        
+                        4. Medical Treatment Assistance:
+                           - Financial support of up to Rs. 10 lakh for medical treatment of outstanding sportspersons or their indigent family members.
+                        </td>
+                    <div class="link"><td><a href="http://127.0.0.1:5500/Project/sports2.html" target="_blank">More info</a></td></div>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Scheme Of Sports Fund For Pension To Meritorious Sportspersons: </td>
+                    <td class="des">The Ministry of Youth Affairs & Sports has introduced a pension scheme for sportspersons to provide them with financial support after they retire from active sports. This pension is granted for life and becomes payable when they reach the age of 30 years or retire from their sports career, whichever comes later. This pension scheme is essential because sportspersons dedicate their youth to rigorous training and often miss out on other opportunities. The monthly pension is meant to compensate them for the sacrifices they make in pursuit of their sporting dreams and achievements. It offers them a reliable source of income once they've left their active sports career behind. 
+                        </td>
+                    <td>Rate of Pension - (Rs./per month) - </br>
+                        1)	Medallists at the Olympic Games / Paralympic Games: 20,000</br>
+                        2)	Gold medallists at the World Cup/World Championship* in Olympic and Asian Games disciplines: 16,000</br>
+                        3)	Silver and Bronze medallists at the World Cup in Olympic and Asian Games disciplines: 14,000</br>
+                        4)	Gold medallists of the Asian/Commonwealth Games/Para Asian Games: 14,000</br>
+                        5)	Silver and Bronze medallists of the Asian/Commonwealth Games/ Para Asian Games: 12,000
+                        </td>
+                    <div class="link"><td><a href="http://127.0.0.1:5500/Project/sports3.html" target="_blank">More info</a></td></div>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Dhyan Chand Award For Life-time Achievement Sports And Games</td>
+                    <td class="des">The "Dhyan Chand Award for Life-time Achievement in Sports and Games" is given annually by the Ministry of Youth Affairs and Sports. It's named after the legendary Indian field hockey player, Major Dhyan Chand. Established in 2002, this award is presented to individuals who have excelled in sports like the Olympics, Paralympics, Asian Games, Commonwealth Games, World Championships, World Cups, Cricket, Indigenous Games, and Parasports.</td>
+                    <td>The award will consist of a statuette, a certificate, ceremonial dress, and a cash Award of ₹10,00,000 which will be presented to the winners at the function for the presentation of the award to be held at a place and on a date to be determined by the Government of India. 
+                        </td>
+                    <div class="link"><td><a href="http://127.0.0.1:5500/Project/sports4.html" target="_blank">More info</a></td></div>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+        <script>
+            function loadGoogleTranslate()
+            {
+                new google.translate.TranslateElement("google_element")
+            }
+        </script> -->
+        <div id="google_translate_element"></div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,ta,te,ma,hi'}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </body>
+</html>

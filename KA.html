@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Project/KA.css">
+    <title>About</title>
+    <style>
+        body{
+            background-image:url("https://i.postimg.cc/YqFd6KWs/1.jpg");
+    /* background-color:rgb(60, 73, 87); */
+    background-size: cover;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* .box{
+    align-items: center;
+    text-align: center;
+    padding-left:50em;
+    padding-top: 10em; 
+    padding-bottom: 50em;
+} */
+.reg{
+    padding-left:20px;
+    /* padding-bottom: 20px; */
+    width:360px;
+    height: 670px;
+    /* margin: 200px auto 20px; */
+    margin:100px auto;
+    padding:10px 20px 30px;
+    background-color:rgba(255, 255, 255, 0.7);
+    color:black;
+    /* font-size:20px; */
+    border-radius:10px;
+    padding:30px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+    position:absolute;
+    top:10px;
+    left:1000px;  
+    /* overflow:auto;  */
+}
+h4{
+    color:#ff7200;
+    font-size: 1.5em;
+}
+.par{
+    /* border:1px solid black; */
+    width:360px;
+    /* height:800px; */
+    /* background-color:#000; */
+    color:#fff;
+    text-align:start;
+    font-size: 15px;
+    text-indent: 50px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.menu{
+    width:400px;
+    height:70px;
+    float:left;
+}
+ul{
+    float:left;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 170px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    /* margin:20px 40px 30px 30px; */
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color:rgb(195, 114, 56);
+    transition: 0.4s ease-in-out;
+}
+.home{
+    padding-left: 500px;
+}
+.content{
+    width:850px;
+    height:auto;
+    margin: auto;
+    color:white;
+    /* position:absolute; */
+    padding-top: 70px;
+    padding-right: 600px;
+}
+.content > p{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    text-align: justify;
+} 
+.content > h1{
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+.content span{
+    color:#ff7200;
+}
+    </style>
+</head>
+<body>
+    <!-- <img src="1.jpg" alt="hello"> -->
+    <div class="menu">
+        <ul>
+            <div class="home"><li ><a href="http://127.0.0.1:5500/Project/index.html">Home</a></li></div>
+            <div class="about"><li><a href="http://127.0.0.1:5500/Project/KA.html">About</a></li></div>
+            <div class="guideline"><li><a href="http://127.0.0.1:5500/Project/KG.html">Guideline</a></li></div>
+            <div class="contact"><li><a href="http://127.0.0.1:5500/Project/KS.html">Contact</a></li></div>
+        </ul>
+    </div>
+    <div class="content">
+        <!-- <h1> Government Schemes using</br><span>Kiosk</span> Management</h1> -->
+        <h1>Information<span> Kiosk</span> </br>about Government Schemes</h1>
+        <p>This Kiosk will help people in rural areas learn about government plans and information easily. It will have a simple screen that people can use, and it will also talk to them in their local language. The Kiosk will use smart technology to give the latest updates and help people interact with it. This way, people can get the right information and use government services more easily, which will also help their communities grow.</p>
+    </div>
+    <div class="reg">
+        <h4>Kiosk</h4>
+        <p class="par">An information Kiosk about government schemes is like a friendly machine that helps people in an easy way. It gives out lots of information about things the government is doing to help citizens, like money for school or healthcare. These kiosks are usually in public places and have screens you can touch, so it's simple to find the information you need. They also talk in different languages to help more people, and they can guide you step-by-step on how to apply for these government programs. They give you updates, so you always know what's happening, and they keep your information safe. Overall, these kiosks are a great way to make sure everyone can understand and use the government's services.</p>
+    </div>
+    <!-- <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script>
+        function loadGoogleTranslate()
+        {
+            new google.translate.TranslateElement("google_element")
+        }
+    </script> -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,ta,te,ma,hi'}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+</body>
+</html>
